@@ -1,0 +1,68 @@
+body{
+    background: url(imagenes/candado-fondo-oscuro.jpg);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    background-attachment: fixed;
+    
+}
+header{
+    margin-top: 1em;
+    background:rgb(77, 106, 121);
+    padding: 20px 0; /*20 para arriba e inferior y 0 para izq y derecha*/
+    font-size: 4em;
+    text-align: left;
+    
+}
+header h1{
+    color: #b19393;
+    text-shadow: white 1em;
+    padding-left: 0.5%;
+    padding-right: 60%;
+}
+
+/*Desde acá, el main*/
+
+main{
+    position: relative;
+    margin: 0 auto;/*auto para que el navegador calcule automatica// la ubicacion centralizada*/
+    
+}
+
+.principal{
+    
+    width: 100%;/*toda la lista de productos ocupa todo el ancho*/
+    margin: auto;/*queda centrado*/
+ }
+ .caja-grande{
+    display: inline-block;
+    margin-top: 2em;
+ }
+
+.caja{
+        
+    text-align: center;
+    width: 30%;/*queremos que ocupe 1/3 del espacio, el resto a los márgenes*/
+            /*vertical-align: top;*/
+        
+    margin: 0 auto; /*cero margen en la vertical*/
+    padding: 5em 40em;
+    box-sizing: border-box;/*con esto ubicamos las 3 cajas dentro del ancho que le dimos de 940px
+            y repetando el padding de 30px 20px */
+    border: 2px solid rgb(59, 157, 206);
+    border-radius: 5%;
+    box-shadow: 10px 10px 30px 15px wheat;
+    background-color: aliceblue;
+}
+.caja h2{
+    font-size: 2em;
+    padding-top: 0;
+    margin-bottom: 1em;
+}
+
+.boton{
+    vertical-align: top;
+    margin-top: 1em ;
+    padding: 0 2em;
+    
+}
+

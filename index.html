@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encripta</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Encriptador y Desencriptador de Texto</h1>
+    </header>
+    <main>
+
+        <div class="principal">
+            <div class="caja-grande">
+                <div class="caja">
+                    <h2>Ingresa el texto a Encriptar</h2>
+                    <input/>
+                    <button class="boton">Encriptar el texto escrito</button>
+
+                    <input type="email" id="email" name="email" placeholder="Tu dirección de mail" required>
+                    <input type="submit" class="btn" value="Enviar" onclick="validarCorreo(document.getElementById('email').value)"/>
+
+
+
+                    <script>
+                        function validarCorreo(mail){
+                            var correcto= /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;                         
+                            var esValido= correcto.test(mail);
+                            if (esValido==true){
+                                alert("el correo es valido");
+                            }
+                            else{
+                                alert('El correo NO es valido');
+                           
+                            }
+                        }
+                            
+                    
+                        
+                    </script>
+                </div>
+
+                
+
+
+
+                <script>
+                    var texto = [];
+                    var input = document.querySelector("input");
+                    input.focus();
+
+                    texto = input.split();
+
+
+                    
+
+                    var button = document.querySelector("button");
+                    
+                    document.write(textoDesencript);
+
+
+
+                    var lista= new Array();
+
+                    function listaEntrada(){    
+
+                        for(var posicion = 0; posicion < texto.length; posicion++) {
+                            if(texto[posicion] == "a"){
+                                "a" = "ai";
+                            }
+                            if(texto[posicion]=="e"){
+                                "e" = "enter";
+                            }
+                            if(texto[posicion]=="i"){
+                                "i" = "imes";
+                            }
+                            if(texto[posicion]=="o"){
+                                "o" = "ober";
+                            }
+                            if(texto[posicion]=="u"){
+                                "u" = "ufat";
+                            }
+                        }
+                        return(texto);
+                    }
+
+                    button.onclick = listaEntrada();
+                    
+            
+        
+        document.write(texto);
+        console.log(ingredientes);
+                </script>
+
+            </div>
+
+            <div class="caja-grande">
+                <div class="caja">
+                    <h2>Ingresa el texto a Desencriptar</h2>
+                    <input/>
+                    <button class="boton">Desencriptar el texto escrito</button>
+                </div>
+                
+
+                
+
+
+                
+                         
+
+                </script>
+
+            </div>
+     
+        </div>
+
+
+        
+    </main>
+    
+    
+</body>
+</html>
